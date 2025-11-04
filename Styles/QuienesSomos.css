@@ -60,13 +60,27 @@
 #quienes-somos-text {
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
+
+    padding: 10px;
+
+    background-color: red;
 }
+
 #quienes-somos-text h2 {
     font-size: 30px;
     font-weight: 800;
+    white-space: nowrap;
+
+    padding: 10px;
+    margin-bottom: 20px;
+
+    border-radius: 40px;
 
     background-color: #1C58DB;
-    border-radius: 10%;
+}
 
-    margin-bottom: 20px;    
+#quienes-somos-text p {
+    justify-content: center;
+    color: white;
 }
