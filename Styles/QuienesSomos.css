@@ -54,7 +54,21 @@
 .quienes-somos {
     display: flex;
 
+    
+    background-image: url(../resources//test_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: grey
+}
+
+.quienes-somos div {
+    display: flex;
+    flex-direction: row;
+
     padding: 30px 50px;
+
+    backdrop-filter: blur(5px);
 }
 
 #quienes-somos-text {
@@ -63,8 +77,6 @@
     /* align-items: center; */
 
     padding: 10px;
-
-    background-color: red;
 }
 
 #quienes-somos-text h2 {
@@ -83,4 +95,31 @@
 #quienes-somos-text p {
     justify-content: center;
     color: white;
+}
+
+#quienes-somos-img {
+
+}
+
+#quienes-somos-img button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.556);
+    border: 0;
+    /* border-radius: 10px 0 0 10px; */
+
+    transition: 0.25s;
+}
+
+#quienes-somos-img button:hover {
+    font-size: 35px;
 }
