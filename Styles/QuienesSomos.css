@@ -71,22 +71,23 @@
     background-color: grey
 }
 
-.quienes-somos div {
+.container {
     display: grid;
     grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
     /* Evitar que el contenido imponga un min-width a las columnas (permite que las celdas se encojan) */
-    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    /* grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); */
 
     width: 100%;
 
-    padding-top: 1.5vw;
+    padding-top: 1.2vw;
     padding-bottom: 1vw;
     padding-left: 2vw;
     padding-right: 2vw;
 
     backdrop-filter: blur(5px);
 
-    background-color: rgba(102, 51, 153, 0.274);
+    /* background-color: rgba(102, 51, 153, 0.274); */
 }
 
 #quienes-somos-text {
@@ -96,9 +97,9 @@
 
     /* width: clamp(25px, 100vw, 2000px); */
 
-    padding: 10px;
-
-    background-color: rgba(0, 255, 255, 0.258);
+    padding: 10px 50px 10px 10px;
+    
+    /* background-color: rgba(0, 255, 255, 0.258); */
 }
 
 #quienes-somos-text h2 {
@@ -117,28 +118,36 @@
 
 #quienes-somos-text p {
     color: white;
-
+    
     justify-content: center;
-
+    
     padding: 0px 20px;
 }
 
 #quienes-somos-img {
-    background-color: rgba(162, 255, 0, 0.258);
     display: flex;
     overflow: hidden;
+    
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+    /* background-color: rgba(162, 255, 0, 0.258); */
 }
 
-/* Asegurar que la imagen dentro del contenedor no exceda su columna */
-#quienes-somos-img img,
-.quienes-somos img {
+#quienes-somos-img img{
     max-width: 100%;
-    height: auto;
-    display: block;
+    max-height: auto;
+
+    border: 1px solid   rgba(0, 0, 0, 0.2);
+    border-radius: 18% 10px 18% 10px;
+
     object-fit: cover;
 }
 
-#quienes-somos-img button {
+
+
+/* #quienes-somos-img button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -152,11 +161,11 @@
 
     background-color: rgba(0, 0, 0, 0.556);
     border: 0;
-    /* border-radius: 10px 0 0 10px; */
+    border-radius: 10px 0 0 10px;
 
     transition: 0.25s;
 }
 
 #quienes-somos-img button:hover {
     font-size: 35px;
-}
+}  */
