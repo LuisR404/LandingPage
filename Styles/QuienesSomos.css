@@ -1,66 +1,4 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-
-img {
-    max-width: 100%;
-}
-
-/* HEADER */
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    /* background-color: red; */
-}
-
-.header h1 {
-    font-size: clamp(17px, 4vw, 20px);
-    white-space: nowrap;
-
-    margin-left: 15px;
-}
-
-#header-logo {
-    /* width: 32px;
-    height: 32px; */
-
-    width: clamp(32px, 7vw, 40px);
-    height: clamp(32px, 7vw, 40px);
-
-    border-radius: 40%;
-}
-.header-nav {
-    display: flex;
-    justify-content: center;
-
-    padding-top: 7.5px;
-    padding-bottom: 7.5px;
-
-
-    background-color: #1C58DB;
-}
-
-.header-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    width: 1100px;
-
-    padding: 0;
-
-    list-style: none;
-}
-
-.header-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
+/* =========== QUIENES SOMOS =========== */
 
 .quienes-somos {
     display: flex;
@@ -69,13 +7,12 @@ img {
     width: 100%;
     
     background-image: url(../resources//test_img.jpg);
-    /* background-repeat: no-repeat; */
     background-position: center; 
     background-size: 100%;
     background-color: grey
 }
 
-.quienes-somos .container {
+.quienes-somos .container { 
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 1fr;
@@ -86,35 +23,22 @@ img {
     padding-bottom: clamp(10px, 1.5vw, 30px);
     padding-left: clamp(2px, 1.5vw, 30px);
     padding-right: clamp(2px, 1.5vw, 30px);
-
+    
     backdrop-filter: blur(5px);
-    /* background-color: rgba(102, 51, 153, 0.274); */
 }
 
-@media (width < 600px) {
-    .quienes-somos .container {
-        grid-template-columns: 1fr;
-    }
+/* -----------> texto <----------- */
 
-    #quienes-somos-img {
-        display: none;
-    }
-}
-
-#quienes-somos-text {
+#quienes-somos-text {  /* ----------> contenedor */ 
     display: flex;
     flex-direction: column;
-
-    padding: 10px 4vw 10px 10px;
     
-    /* background-color: rgba(0, 255, 255, 0.258); */
+    padding: 10px 4vw 10px 10px;
 }
 
 
-#quienes-somos-text h2 {
-    /* font-size: 30px; */
+#quienes-somos-text h2 { /* ----------> subtitulo */ 
     font-size: clamp(20px, 2vw, 30px);
-    /* font-size: 2vw; */
     font-weight: 800;
     white-space: nowrap;
     color: white;
@@ -127,12 +51,8 @@ img {
     background-color: #1C58DB;
 }
 
-#quienes-somos-text p {
+#quienes-somos-text p { /* ----------> parrafo */ 
     font-size: auto;
-    /* text-wrap: pretty;
-    hyphenate-limit-chars: 7;
-    text-align: justify; */
-
     color: white;
     
     justify-content: center;
@@ -140,32 +60,194 @@ img {
     padding: 0px 20px;
 }
 
-#quienes-somos-img {
-    overflow: hidden;
-    
+/* -----------> imagen <----------- */
+
+#quienes-somos-img { /* ----------> contenedor */ 
     width: 100%;
     height: auto;
-
+    
     align-content: center;
     
-    
-    /* background-color: rgba(162, 255, 0, 0.258); */
+    overflow: hidden;
 }
 
-#quienes-somos-img img{
-    max-width: 100%;
-    max-height: auto;
-    
+#quienes-somos-img img{  /* ----------> imagen */  
     width: 100%;
     height: auto;
-    
-    aspect-ratio: auto !important;
     
     border: 1px solid   rgba(0, 0, 0, 0.2);
     border-radius: 18% 10px 18% 10px;
     
-    object-fit: cover;
-    /* margin: 10px 50px 10px 10px;; */
-
     background-color: rgba(255, 162, 0, 0.258);
+    
+    aspect-ratio: auto;
+    object-fit: cover;
+}
+
+/* -----------> media queries <----------- */
+
+@media (max-width: 600px) {
+    
+    .quienes-somos .container {
+        grid-template-columns: 1fr; /* ------> ajusta la disposicion del grid */
+    }
+    
+    #quienes-somos-img {
+        display: none; /* --------> invisibiliza la imagen */
+    }
+}
+
+
+/* =========== RETOS DE FABIO =========== */
+
+.retos-fabio {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    
+    text-wrap: nowrap;
+
+    margin-top: 10px;
+
+    background-color: rgba(0, 1, 38, 0.36);
+    background-image: url('../resources/textura.jpg');
+    background-size:15vw;
+    background-blend-mode: color;
+}
+
+/* -----------> texto <----------- */
+.retos-fabio div {
+    text-align: center;
+    align-self: center;
+    color: white;
+    width: 100%;
+}
+
+/* -----------> imagen <----------- */
+.retos-fabio img {
+    justify-self: end;
+
+    max-width: 200px;
+    height: auto;
+
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+/* -----------> efecto hover <----------- */
+.retos-fabio:hover {
+    cursor: pointer;
+}
+
+/* -----------> media queries <----------- */
+
+@media (max-width: 600px) {
+    .retos-fabio {  /* ----------> ajusta la disposicion del grid */ 
+        grid-template-columns: 1fr;
+    }
+
+    .retos-fabio img {  /* ----------> desaparece la imagen */ 
+        display: none;
+    }
+
+    .retos-fabio div {  /* ----------> ajusta el texto y el margen */ 
+        font-size: 12px;
+        
+        padding: 10px;
+    }
+}
+
+
+/* =========== ACTIVIDADES Y PROYECTOS =========== */
+
+.actividades-proyectos {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: clamp(5px, 1.2vw, 25px);
+    padding-bottom: clamp(10px, 1.5vw, 30px);
+    padding-left: clamp(2px, 1.5vw, 30px);
+    padding-right: clamp(2px, 1.5vw, 30px);
+    
+}
+
+.actividades-proyectos h2 {  /* ----------> subtitulo */ 
+    font-size: clamp(20px, 2vw, 30px);
+    font-weight: 800;
+    text-align: center;
+    white-space: nowrap;
+    
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 20px;
+}
+
+.actividades-proyectos p {  /* ----------> parrafo */ 
+    text-align: center;
+    text-wrap: balance;
+    
+    align-self: center;
+    
+    max-width: 60%;
+
+    margin-bottom: 40px;
+}
+
+/* -----------> proyecto <----------- */
+
+.proyecto { 
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ----------->> imagen <<----------- */
+
+.proyecto img {
+
+}
+
+/* ----------->> texto <<----------- */
+
+.proyecto div {  /* ----------> contenedor */ 
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.proyecto div h3 {  /* ----------> subtitulo */ 
+    font-size: clamp(15px, 1.5vw, 25px);
+    font-weight: 800;
+    text-align: center;
+    white-space: nowrap;
+    
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 20px;
+}
+
+.proyecto div p {  /* ----------> parrafo */ 
+    text-align: left;
+    text-wrap: balance;
+    
+    align-self: center;
+    
+    max-width: 80%;
+
+    margin-bottom: 40px;
+}
+
+.proyecto div button {  /* ----------> boton mas */ 
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    
+    align-self: center;
+
+    width: fit-content;
+
+    padding: 15px 30px;
+    
+    border: none;
+    border-radius: 25px;
+    background-color: #F29922;
 }
