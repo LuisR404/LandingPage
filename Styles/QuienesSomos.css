@@ -108,10 +108,10 @@
 
     margin-top: 10px;
 
-    background-color: rgba(0, 1, 38, 0.36);
+    background-color: rgb(20, 0, 67);
     background-image: url('../resources/textura.jpg');
     background-size:15vw;
-    background-blend-mode: color;
+    background-blend-mode:color-burn;
 }
 
 /* -----------> texto <----------- */
@@ -202,7 +202,7 @@
 /* ----------->> imagen <<----------- */
 
 .proyecto img {
-
+    justify-self: right;
 }
 
 /* ----------->> texto <<----------- */
@@ -210,6 +210,7 @@
 .proyecto div {  /* ----------> contenedor */ 
     display: flex;
     flex-direction: column;
+    justify-self: left;
 
     padding-left: 30px;
     padding-right: 30px;
@@ -226,7 +227,8 @@
 }
 
 .proyecto div p {  /* ----------> parrafo */ 
-    text-align: left;
+    text-align: justify;
+    hyphenate-limit-chars: 2;
     text-wrap: balance;
     
     align-self: center;
