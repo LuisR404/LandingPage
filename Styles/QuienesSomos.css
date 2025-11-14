@@ -207,7 +207,7 @@
 
 /* ----------->> texto <<----------- */
 
-.proyecto div {  /* ----------> contenedor */ 
+.proyecto div {  /* ----------> contenedor */     
     display: flex;
     flex-direction: column;
     justify-self: left;
@@ -228,7 +228,7 @@
 
 .proyecto div p {  /* ----------> parrafo */ 
     text-align: justify;
-    hyphenate-limit-chars: 2;
+    hyphens: auto;
     text-wrap: balance;
     
     align-self: center;
