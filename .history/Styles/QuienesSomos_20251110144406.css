@@ -207,7 +207,7 @@
 
 /* ----------->> texto <<----------- */
 
-.proyecto div {  /* ----------> contenedor */     
+.proyecto div {  /* ----------> contenedor */ 
     display: flex;
     flex-direction: column;
     justify-self: left;
@@ -228,7 +228,7 @@
 
 .proyecto div p {  /* ----------> parrafo */ 
     text-align: justify;
-    hyphens: auto;
+    hyphenate-limit-chars: 2;
     text-wrap: balance;
     
     align-self: center;
@@ -364,15 +364,7 @@
 
 .unete {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-
-    max-width: 100%;
-
-    padding-top: clamp(5px, 1.2vw, 25px);
-    padding-bottom: clamp(10px, 1.5vw, 30px);
-    padding-left: clamp(2px, 1.5vw, 30px);
-    padding-right: clamp(2px, 1.5vw, 30px);
+    grid-template-columns: repeat(2, 1fr)
 }
 
 /* -----------> redes <----------- */
@@ -380,18 +372,8 @@
 .redes {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .redes button {
     width: 50%;
-
-    padding: 15px 0px;
-    margin: 20px;
-
-    border: none;
-    border-radius: none;
-
-    color: white;
-    background-color: black;
 }

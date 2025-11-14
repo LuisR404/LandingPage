@@ -207,7 +207,7 @@
 
 /* ----------->> texto <<----------- */
 
-.proyecto div {  /* ----------> contenedor */     
+.proyecto div {  /* ----------> contenedor */ 
     display: flex;
     flex-direction: column;
     justify-self: left;
@@ -228,7 +228,7 @@
 
 .proyecto div p {  /* ----------> parrafo */ 
     text-align: justify;
-    hyphens: auto;
+    hyphenate-limit-chars: 2;
     text-wrap: balance;
     
     align-self: center;
@@ -271,7 +271,7 @@
     background-color: #1C58DB; 
 }
 
-/* -----------> texto <----------- */
+/* ----------->> texto <<----------- */
 
 .eventos div {
     display: flex;
@@ -300,98 +300,13 @@
 }
 
 .eventos div p {
-    text-align: left;
-    /* hyphenate-limit-chars: 2; */
+    text-align: justify;
+    hyphenate-limit-chars: 2;
     text-wrap: balance;
-    align-self: left;
-
-    margin-bottom: 40px;
-}
-
-.eventos div button {
-    font-size: 15px;
-    font-weight: 800;
-    color: #F29922;
     
     align-self: center;
-
-    width: fit-content;
-
-    padding: 15px 30px;
     
-    border: none;
-    border-radius: 25px;
-    background-color: white;
-}
+    max-width: 80%;
 
-/* -----------> imagen <----------- */
-.eventos img {
-    width: 350px;
-}
-
-
-/* =========== CARRUSEL =========== */
-
-.carrusel {
-    display: flex;
-    flex-direction: row;
-
-    margin: 0px;
-    padding: 0px;
-
-    width: 100%;
-    max-height: 400px
-}
-
-.carrusel img {
-    width: 100%;
-    /* object-fit: contain; */
-}
-
-.carrusel button {
-    font-size: 20px;
-    font-weight: 800;
-    color: white;
-    /* height: 100%; */
-    width: 40px;
-
-    border: none;
-    border-radius: 0px;
-    background-color: #00000080;
-}
-
-/* =========== UNETE =========== */
-
-.unete {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-
-    max-width: 100%;
-
-    padding-top: clamp(5px, 1.2vw, 25px);
-    padding-bottom: clamp(10px, 1.5vw, 30px);
-    padding-left: clamp(2px, 1.5vw, 30px);
-    padding-right: clamp(2px, 1.5vw, 30px);
-}
-
-/* -----------> redes <----------- */
-
-.redes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.redes button {
-    width: 50%;
-
-    padding: 15px 0px;
-    margin: 20px;
-
-    border: none;
-    border-radius: none;
-
-    color: white;
-    background-color: black;
+    margin-bottom: 40px;
 }
