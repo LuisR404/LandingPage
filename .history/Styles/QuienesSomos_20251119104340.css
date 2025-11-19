@@ -331,13 +331,12 @@
 /* -----------> calendario <----------- */
 .calendario {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-rows: 1 repeat(3, 1fr);
+    /* grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1 repeat(3, 1fr); */
 
 }
 
-.element {
-    width: 10px;
+.calendario div {
     border: 10px solid black;
     background-color: red;
 }
