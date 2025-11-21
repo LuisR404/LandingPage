@@ -103,7 +103,59 @@
 /* =========== RETOS DE FABIO =========== */
 
 .retos-fabio {
+    display: grid;
+    grid-template-columns: 1fr 300px;
     
+    text-wrap: nowrap;
+
+    margin-top: 10px;
+
+    background-color: rgb(20, 0, 67);
+    background-image: url('../resources/textura.jpg');
+    background-size:15vw;
+    background-blend-mode:color-burn;
+}
+
+/* -----------> texto <----------- */
+.retos-fabio div {
+    text-align: center;
+    align-self: center;
+    color: white;
+    width: 100%;
+}
+
+/* -----------> imagen <----------- */
+.retos-fabio img {
+    justify-self: end;
+
+    max-width: 200px;
+    height: auto;
+
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+/* -----------> efecto hover <----------- */
+.retos-fabio:hover {
+    cursor: pointer;
+}
+
+/* -----------> media queries <----------- */
+
+@media (max-width: 600px) {
+    .retos-fabio {  /* ----------> ajusta la disposicion del grid */ 
+        grid-template-columns: 1fr;
+    }
+
+    .retos-fabio img {  /* ----------> desaparece la imagen */ 
+        display: none;
+    }
+
+    .retos-fabio div {  /* ----------> ajusta el texto y el margen */ 
+        font-size: 12px;
+        
+        padding: 10px;
+    }
 }
 
 
@@ -159,7 +211,7 @@
 
 /* ----------->> texto <<----------- */
 
-.proyecto div {  /* ----------> contenedor */     
+.proyecto div {  /* ----------> contenedor */ 
     display: flex;
     flex-direction: column;
     justify-self: left;
@@ -180,7 +232,7 @@
 
 .proyecto div p {  /* ----------> parrafo */ 
     text-align: justify;
-    hyphens: auto;
+    hyphenate-limit-chars: 2;
     text-wrap: balance;
     
     align-self: center;
@@ -277,18 +329,17 @@
 }
 
 /* -----------> calendario <----------- */
-.calendario {
+/* .calendario {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-rows: 1 repeat(3, 1fr);
 
 }
 
-.element {
-    width: 10px;
+.calendario div {
     border: 10px solid black;
     background-color: red;
-}
+} */
 
 
 /* =========== CARRUSEL =========== */
