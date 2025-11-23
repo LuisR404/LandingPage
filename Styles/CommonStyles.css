@@ -1,11 +1,25 @@
 /* ============ ESTILOS DE PAGINA ============ */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open sans', sans-serif;
     margin: 0;
+}
+
+.item {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 3.5px rgba(255, 255, 255, 0.5), 3px 5px 10px rgba(0, 0, 0, 0.4);
+    /* box-shadow:  */
 }
 
 img {
     max-width: 100% ;
+}
+
+button:hover {
+    cursor: pointer;
+    scale: 110%;
 }
 
 /* ============ HEADER ============ */
