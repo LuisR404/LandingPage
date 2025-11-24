@@ -385,7 +385,9 @@
     font-size: 15px;
     font-weight: 800;
 
-    background: linear-gradient(to bottom, #db7c00ff, #ce4f00ff);
+    border: 1px solid black;
+
+    background: linear-gradient(to bottom, #F29922, #f27222);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 

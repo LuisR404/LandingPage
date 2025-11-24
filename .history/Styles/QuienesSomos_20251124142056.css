@@ -387,7 +387,7 @@
 
     background: linear-gradient(to bottom, #db7c00ff, #ce4f00ff);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text, img;
 
     margin: 0px;
     padding: 0px;    

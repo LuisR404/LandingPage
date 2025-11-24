@@ -506,10 +506,13 @@
     color: white;
 
     transition: .3s;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 #discord-button {
-    background: linear-gradient(to bottom, rgb(78, 13, 255), rgb(110, 13, 255));
+    h3 {background: linear-gradient(to bottom, rgb(78, 13, 255), rgb(110, 13, 255));}
     img {width: 40px;}
 }
 
