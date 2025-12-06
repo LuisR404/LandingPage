@@ -1,35 +1,103 @@
-img {
-    width: 150px;
-}
-
+/* =========== INFO EVENTO =========== */
 #info-evento {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     width: 100%;
     height: 100%;
-
+    
     position: fixed;
     z-index: 99;
-
+    
     background-color: #000000be;
+
+    animation-name: info-evento;
+    animation-duration: .4s;
 }
 
+/* -----------> button <----------- */
+#close-event {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    
+    position: fixed;
+    z-index: 99;
+    right: 20px;
+    top: 15px;
+    
+    background: none;
+    border: none;
+
+    transition: .25s;
+}
+
+/* -----------> container <----------- */
 #info-evento-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     width: 1000px;
     height: 500px;
+    
     background: white;
+    border-radius: 30px;
+    
+    overflow: hidden;
+    
+    animation-name: info-evento-container;
+    animation-duration: .4s;
 }
 
+#info-evento-container img {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* -----------> keyframes <----------- */
+@keyframes info-evento {
+    0% {
+        background-color: transparent;
+    }
+    
+    90% {
+        background-color: #000000be;
+    }
+}
+
+@keyframes info-evento-container {
+    from {
+        visibility: hidden;
+        opacity: 30%;
+        scale: 0.3;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 100%;
+        scale: 1;
+    }
+}
+
+
+/* =========== EVENTOS =========== */
 .eventos {
     display: flex;
     flex-direction: column;
     padding: 40px 50px;
-
+    
     max-width: 100%;
 }
 
+/* -----------> evento individual <----------- */
 .evento {
     padding-bottom: 30px
 }

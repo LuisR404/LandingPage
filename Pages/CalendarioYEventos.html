@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/CommonStyles.css">   <!-- ESTILOS GENERALES -->
     <link rel="stylesheet" href="../Styles/CalendarioYEventos.css">     <!-- ESTILOS DE LA PÁGINA -->
+    <link rel="shortcut icon" href="../resources/club_icon.jpg" />
     <title>Document</title>
 </head>
 <body>
-    <section id="info-evento">
+    <section id="info-evento" style="display: none;">
+
+        <button id="close-event">
+            <b>X</b>
+        </button>
+
         <div id="info-evento-container">
-    
+            
+            <div></div>
+
+            <img src="../resources/test_img.jpg" alt="">
+            
         </div>
+
     </section>
     
     <!-- TITULO -->
@@ -30,29 +41,11 @@
         </ul>
     </nav>
 
-
+    <!-- EVENTOS -->
     <section class="eventos">
         <div id="eventos-container">
-            <div class="evento">
-                <h2>Evento</h2>
-                <p><b>Lun xx/xx/xx | </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur facilis quibusdam numquam. Impedit officiis ad enim nam autem asperiores deserunt, labore adipisci sit eligendi inventore voluptas, necessitatibus, illo dolorem id?</p>
-            </div>
-
-            <div class="evento">
-                <h2>Evento</h2>
-                <p><b>Lun xx/xx/xx | </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur facilis quibusdam numquam. Impedit officiis ad enim nam autem asperiores deserunt, labore adipisci sit eligendi inventore voluptas, necessitatibus, illo dolorem id?</p>
-            </div>
-
-            <div class="evento">
-                <h2>Evento</h2>
-                <p><b>Lun xx/xx/xx | </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur facilis quibusdam numquam. Impedit officiis ad enim nam autem asperiores deserunt, labore adipisci sit eligendi inventore voluptas, necessitatibus, illo dolorem id?</p>
-            </div>
-
-            <div class="evento">
-                <h2>Evento</h2>
-                <p><b>Lun xx/xx/xx | </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur facilis quibusdam numquam. Impedit officiis ad enim nam autem asperiores deserunt, labore adipisci sit eligendi inventore voluptas, necessitatibus, illo dolorem id?</p>
-            </div>
         </div>
     </section>
 </body>
+<script src="../Scripts/CalendarioYEventos.js"></script>
 </html>

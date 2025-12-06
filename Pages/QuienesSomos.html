@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/CommonStyles.css">   <!-- ESTILOS GENERALES -->
     <link rel="stylesheet" href="../Styles/QuienesSomos.css">   <!-- ESTILOS DE LA PÁGINA -->
+    <link rel="shortcut icon" href="../resources/club_icon.jpg" />
     <title>Quienes Somos</title>
 </head>
 
@@ -26,7 +27,7 @@
     </nav>
     
     <!-- RETOS DE FABIO -->
-    <section class="retos-fabio item">
+    <section class="item" id="retos-fabio">
         
         <h3><i>RETOS DE FABIO</i></h3>
         <img src="../resources/fabio.png" alt="">
@@ -54,11 +55,15 @@
     
     <!-- CARRUSEL -->
     <section class="carrusel">
-        <button><</button>
+        <div class="boton-carrusel" id="carrusel-izquierda"><img src="../resources/arrow_left.png" alt=""></div>
         
-        <img src="../resources/test_img.jpg" alt="">
+        <div id="carrusel-container">
+            <!-- <img src="../resources/test_img.jpg" alt="">
+            <img src="../resources/carrusel_2.jpg" alt=""> -->
+            <!-- <img src="../resources/carrusel_3.jpg" alt=""> -->
+        </div>
         
-        <button>></button>
+        <div class="boton-carrusel" id="carrusel-derecha"><img src="../resources/arrow_right.png" alt=""></div>
     </section>
 
     <!-- ACTIVIDADES Y PROYECTOS -->
@@ -95,7 +100,7 @@
                         Quisque consectetur metus quis semper malesuada. Etiam eu fermentum massa. Aenean p
                     </p>
                     
-                    <button class="item"><h3>Más ></h3></button>
+                    <button class="item" id="actividades-proyectos-button"><h3>Más ></h3></button>
                 </div>
             </div>
         </div>
@@ -117,7 +122,7 @@
                     Lorem ipsum dolor sit amet consectetur adipiscing elit molestie ligula
                 </p>
                 
-                <button class="item"><h3>Más ></h3></button>
+                <button class="item" id="eventos-button"><h3>Más ></h3></button>
                 
             </div>
             
@@ -140,7 +145,7 @@
     <section class="unete">
         <div id="unete-container">
             <div class="redes">
-                <button class="item" id="discord-button">DISCORD<img src="../resources/logo_discord.png" alt=""></button>
+                <button class="item" id="discord-button" >DISCORD<img src="../resources/logo_discord.png" alt=""></button>
                 <button class="item" id="instagram-button">INSTAGRAM<img src="../resources/instagram_logo.png" alt=""></button>
             </div>
             
@@ -157,4 +162,5 @@
     </section>
     
 </body>
+<script src="../Scripts/QuienesSomos.js"></script>
 </html>

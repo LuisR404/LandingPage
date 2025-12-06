@@ -4,7 +4,7 @@
 
 /* =========== RETOS DE FABIO =========== */
 
-.retos-fabio {
+#retos-fabio {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,11 +25,11 @@
     transition: 0.3s;
 }
 
-.retos-fabio img {
+#retos-fabio img {
     width: 70px;
 }
 
-.retos-fabio:hover {
+#retos-fabio:hover {
     cursor: pointer;
     scale: 110%;
 }
@@ -146,28 +146,66 @@
     padding: 0px;
 
     width: 100%;
-    max-height: 400px
+
+    max-width: 100%;
+    overflow: hidden;
+    height: 400px;
+    position: relative;
 }
 
-.carrusel img {
+#carrusel-container {
+    display: flex;
+    flex-direction: row;
+
+    /* Evitar ancho fijo que provoca overflow en pantallas pequeñas */
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+
+    /* Si necesitas un contenedor más ancho para la animación del carrusel,
+       controla la anchura con transform/translate en lugar de un width fijo. */
+
+    margin-left: 0px;
+    padding: 0px;
+
+    background-color: red;
+}
+
+#carrusel-container img {
+    width: calc(100% / 2);
     object-fit: cover;
 }
 
-.carrusel button {
-    font-size: 20px;
-    font-weight: 800;
-    color: white;
-    /* height: 100%; */
-    width: 40px;
+.boton-carrusel {
+    align-self: center;
 
-
+    position: absolute;
+    /* z-index: 99; */
+    
     border: none;
     border-radius: 0px;
-    background-color: #00000080;
+    background-color: transparent;
+    
+    transition: .5s;
+
+    img {
+        width: 30px;
+        height: 50px;
+    }
 }
 
+.boton-carrusel:hover {
+    scale: 115%;
+    cursor: pointer;
+}
 
+.boton-carrusel:active {
+    scale: .8;
+}
+
+#carrusel-izquierda {left: 20px;}
+#carrusel-derecha {right: 20px;}
 
 /* =========== ACTIVIDADES Y PROYECTOS =========== */
 
@@ -279,7 +317,7 @@
     margin-bottom: 40px;
 }
 
-.proyecto div button {  /* ----------> boton mas */ 
+#actividades-proyectos-button {  /* ----------> boton mas */ 
     align-self: center;
 
     width: fit-content;
@@ -293,7 +331,7 @@
     transition: .3s;
 }
 
-.proyecto div button h3 {
+#actividades-proyectos-button h3 {
     font-size: 15px;
     font-weight: 800;
     color: white;
@@ -365,7 +403,7 @@
     margin-bottom: 40px;
 }
 
-#proximo-evento button {
+#eventos-button {
     /* color: #F29922; */
     
     align-self: center;
@@ -381,7 +419,7 @@
     transition: .3s;
 }
 
-#proximo-evento button h3 {
+#eventos-button h3 {
     font-size: 15px;
     font-weight: 800;
 
@@ -504,16 +542,17 @@
     border-radius: 30px;
 
     color: white;
+    background: linear-gradient(to bottom, #F29922, #f27222);
 
     transition: .3s;
 }
 
 #discord-button {
-    background: linear-gradient(to bottom, rgb(78, 13, 255), rgb(110, 13, 255));
+    /* background: linear-gradient(to bottom, rgb(78, 13, 255), rgb(110, 13, 255)); */
     img {width: 40px;}
 }
 
 #instagram-button {
-    background: linear-gradient(to right, yellow, rgb(255, 38, 0), rgb(255, 0, 225), rgb(153, 0, 255));
+    /* background: linear-gradient(to right, yellow, rgb(255, 38, 0), rgb(255, 0, 225), rgb(153, 0, 255)); */
     img {width: 30px; height: 30px;}
 }
